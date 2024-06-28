@@ -1,45 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Spotify</title>
 </head>
-<body class="bg-black w-screen m-0 p-0 overflow-x-hidden">
-    <div class="flex gap-1 h-screen md:p-2">
 
-        <!-- left -->
-        <div class="left h-full flex flex-col gap-[2px]">
-            <!-- left top -->
-            <div class="top w-full h-fit rounded-lg overflow-hidden pb-8 pl-2 pt-2">
-                <ul class="flex flex-col gap-3" >
-                    <li class="text-2xl max-w-full "><img class="invert" src="assets/asset 57.svg" alt=""></li>
-                    <li  class=" flex max-w-full gap-2 text-white font-semibold  h-6 w-6"><img class="invert" src="assets/asset 59.svg" alt=""> <span>Home</span></li>
-                    <li class="opacity-60 max-w-full hover:opacity-100 font-semibold flex text-white gap-2 items-center h-6 w-6"><img class="invert" src="assets/asset 60.svg" alt=""><span>Search</span></li>
-                </ul>
+<body class="bg-[#212121] sm:bg-black w-screen m-0 p-0 overflow-x-hidden">
+    <link rel="stylesheet" href="output.css">
+    <title>Spotify</title>
+    </head>
+
+    <body class="bg-black w-screen m-0 p-0 overflow-x-hidden">
+        <!-- larger screens -->
+        <div class=" hidden sm:flex gap-1 h-screen md:p-2">
+
+            <!-- left -->
+            <div class="left h-full flex flex-col gap-[2px]">
+                <!-- left top -->
+                <div class="top w-full h-fit rounded-lg overflow-hidden pb-8 pl-2 pt-2">
+                    <ul class="flex flex-col gap-3">
+                        <li class="text-2xl max-w-full "><img class="invert" src="assets/asset 57.svg" alt=""></li>
+                        <li class=" flex max-w-full gap-2 text-white font-semibold  h-6 w-6"><img class="invert"
+                                src="assets/asset 59.svg" alt=""> <span>Home</span></li>
+                        <li
+                            class="opacity-60 max-w-full hover:opacity-100 font-semibold flex text-white gap-2 items-center h-6 w-6">
+                            <img class="invert" src="assets/asset 60.svg" alt=""><span>Search</span></li>
+                    </ul>
+                </div>
+                <!-- buttom left -->
+                <div class="buttom h-full mt-1 rounded-lg"></div>
             </div>
-            <!-- buttom left -->
-            <div class="buttom h-full mt-1 rounded-lg"></div>
+
+            <div class="right h-full rounded-lg justify-end border border-gray-950 ">
+                <!-- top nav here -->
+                <div id="topnav" class="h-[12.666667%] rounded-t-md flex justify-between overx">
+                    <div class="flex p-4 items-center gap-2">
+                        <div class="bg-black rounded-full">
+                            <img class=" h-8 p-1.5 invert opacity-60 rounded-full text-white" src="assets/asset 72.svg"
+                                alt="">
+                        </div>
+                        <div class="bg-black rounded-full">
+                            <img class=" h-8 p-1.5 invert opacity-60 rounded-full text-white" src="assets/asset 73.svg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 items-center">
+                        <span
+                            class="text-white opacity-60 hover:opacity-100 hover:text-lg font-semibold hover:font-semibold transition">Sign
+                            up</span>
+                        <span class="bg-white w-20 text-center font-bold p-2 rounded-e-3xl rounded-s-3xl">login</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="right h-full rounded-lg justify-end border border-gray-950 ">
-            <!-- top nav here -->
-            <div id="topnav" class="h-[12.666667%] rounded-t-md flex justify-between overflow-x-hidden">
-               <div class="flex p-4 items-center gap-2">
-                   <div class="bg-black rounded-full">
-                       <img class=" h-8 p-1.5 invert opacity-60 rounded-full text-white" src="assets/asset 72.svg" alt="">
-                   </div>
-                   <div class="bg-black rounded-full">
-                       <img class=" h-8 p-1.5 invert opacity-60 rounded-full text-white" src="assets/asset 73.svg" alt="">
-                </div>
-               </div>
-                <div class="flex gap-4 p-4 items-center">
-                   <span class="text-white opacity-60 hover:opacity-100 hover:text-lg font-semibold hover:font-semibold transition">Sign up</span>
-                   <span class="bg-white w-20 text-center font-bold p-2 rounded-e-3xl rounded-s-3xl">login</span>
+        <!-- smaller screens -->
+        <small class="sm:hidden w-screen h-screen overflow-hidden">
+
+            <div id="navbar" class="flex justify-between bg-black p-2 h-12 items-center">
+                <div id="brand"><i class="text-white text-3xl fa-brands fa-spotify"></i></i></div>
+                <div class="flex items-center">
+                    <ul class="flex gap-4 items-center">
+                        <li><i class="text-white opacity-80  fa-solid fa-magnifying-glass"></i></li>
+                        <li
+                            class="flex bg-white items-center  font-bold w-24 h-8  justify-center font-serif rounded-e-3xl rounded-s-3xl">
+                            Open App</li>
+                        <li><i class="text-white text-xl fa-solid fa-bars"></i></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
-</body>
+
+
+            <div id="heros" class="flex flex-col gap-1 overflow-x-scroll">
+                <ul class="flex flex-row gap-8">
+                <img class="h-20 w-30 rounded-full" src="assets/asset 0.jpeg" alt="">
+                <img class="h-20 w-30 rounded-full" src="assets/asset 1.jpeg" alt="">
+                <img class="h-20 w-30 rounded-full" src="assets/asset 2.jpeg" alt="">
+                <img class="h-20 w-30 rounded-full" src="assets/asset 3.jpeg" alt="">
+                <img class="h-20 w-30 rounded-full" src="assets/asset 4.jpeg" alt="">
+                <img class="h-20 w-30 rounded-full" src="assets/asset 5.jpeg" alt="">
+                <img class="h-20 w-30 rounded-full" src="assets/asset 6.jpeg" alt="">
+                <img class="h-20 w-30 rounded-full" src="assets/asset 7.jpeg" alt="">
+                <img class="h-20 w-30 rounded-full" src="assets/asset 8.jpeg" alt="">
+                <img class="h-20 w-30 rounded-full" src="assets/asset 9.jpeg" alt=""> 
+                </u>
+            </div>
+
+        </small>
+
+
+    </body>
+
 </html>
