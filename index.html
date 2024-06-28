@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Spotify</title>
+    <style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
 </head>
 
 <body class="bg-[#212121] sm:bg-black w-screen m-0 p-0 overflow-x-hidden">
@@ -75,18 +87,20 @@
             </div>
 
 
-            <div id="heros" class="flex flex-col gap-1 overflow-x-scroll">
-                <ul class="flex flex-row gap-8">
-                <img class="h-20 w-30 rounded-full" src="assets/asset 0.jpeg" alt="">
-                <img class="h-20 w-30 rounded-full" src="assets/asset 1.jpeg" alt="">
-                <img class="h-20 w-30 rounded-full" src="assets/asset 2.jpeg" alt="">
-                <img class="h-20 w-30 rounded-full" src="assets/asset 3.jpeg" alt="">
-                <img class="h-20 w-30 rounded-full" src="assets/asset 4.jpeg" alt="">
-                <img class="h-20 w-30 rounded-full" src="assets/asset 5.jpeg" alt="">
-                <img class="h-20 w-30 rounded-full" src="assets/asset 6.jpeg" alt="">
-                <img class="h-20 w-30 rounded-full" src="assets/asset 7.jpeg" alt="">
-                <img class="h-20 w-30 rounded-full" src="assets/asset 8.jpeg" alt="">
-                <img class="h-20 w-30 rounded-full" src="assets/asset 9.jpeg" alt=""> 
+            <div id="heros" class="flex flex-col gap-1 ">
+                <span class="flex flex-col gap-2"><p class="text-white text-2xl">Popular artists</p>
+                        <ul class="flex flex-row gap-8 overflow-x-scroll no-scrollbar">
+                <img class="rounded-md h-40 w-40" src="assets/asset 0.jpeg" alt="">
+                <img class="rounded-md h-40 w-40" src="assets/asset 1.jpeg" alt="">
+                <img class="rounded-md h-40 w-40" src="assets/asset 2.jpeg" alt="">
+                <img class="rounded-md h-40 w-40" src="assets/asset 3.jpeg" alt="">
+                <img class="rounded-md h-40 w-40" src="assets/asset 4.jpeg" alt="">
+                <img class="rounded-md h-40 w-40" src="assets/asset 5.jpeg" alt="">
+                <img class="rounded-md h-40 w-40" src="assets/asset 6.jpeg" alt="">
+                <img class="rounded-md h-40 w-40" src="assets/asset 7.jpeg" alt="">
+                <img class="rounded-md h-40 w-40" src="assets/asset 8.jpeg" alt="">
+                <img class="rounded-md h-40 w-40" src="assets/asset 9.jpeg" alt=""> 
+            </span>
                 </u>
             </div>
 
