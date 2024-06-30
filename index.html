@@ -28,7 +28,7 @@
     </style>
 </head>
 
-<body class="bg-[#212121] sm:bg-black w-screen m-0 p-0 overflow-x-hidden overflow-y-hidden">
+<body class="bg-[#212121] sm:bg-black w-screen m-0 p-0 overflow-x-hidden">
 
     <!-- larger screens -->
     <div class="hidden sm:flex gap-1 h-screen md:p-2">
@@ -196,8 +196,12 @@
 
 
     <!-- smaller screens -->
-    <div id="navlist"
-        class="hidden  inset-0 z-10 sm:hidden fixed bg-black text-white h-screen w-screen overflow-y-scroll">
+    
+
+    <small class="sm:hidden  w-screen h-screen">
+
+        <div id="navlist"
+        class="hidden  inset-0 z-10 sm:hidden fixed bg-black text-white h-screen w-screen">
         <div class="flex flex-col gap-4">
 
             <button id="xmark" class="flex text-2xl justify-end px-4 p-2 w-full">
@@ -216,29 +220,24 @@
         </div>
     </div>
 
-    <small class="sm:hidden  w-screen h-screen overflow-y-scroll">
 
-        <div id="navbar" class="flex px-4 justify-between bg-black p-2 h-12 items-center">
+        <div id="navbar" class="flex px-4 justify-between bg-black w-screen p-2 h-12 fixed  items-center">
             <div id="brand"><i class="text-white text-3xl fa-brands fa-spotify"></i></div>
             <div class="flex items-center">
                 <ul class="flex gap-4 items-center">
-                    <li><i class="text-white opacity-80  fa-solid fa-magnifying-glass"></i></li>
-                    <li
-                        class="flex bg-white items-center  font-bold w-24 h-8  justify-center font-serif rounded-e-3xl rounded-s-3xl">
-                        Open App</li>
-                    <button>
-                        <i id="navitems" class="text-white text-xl fa-solid fa-bars"></i>
-                    </button>
+                    <i class="text-white opacity-80  fa-solid fa-magnifying-glass"></i>
+                    <i class="flex bg-white items-center  font-bold w-24 h-8  justify-center font-serif rounded-e-3xl rounded-s-3xl">Open App</i> 
+                    <button id="navitems" class="text-white text-xl fa-solid fa-bars"></button>
                 </ul>
             </div>
         </div>
-        
 
-        <div id="heros" class="flex flex-col gap-1 px-4">
+        <div id="heros" class="flex flex-col gap-1 px-4 pt-12">
             <span class="mt-6 font-semibold flex flex-col gap-4">
                 <p class="text-white text-2xl">Popular artists</p>
                 <ul class="flex flex-row gap-8 overflow-x-scroll no-scrollbar">
-                    <img class="rounded-md h-40 w-40" src="assets/asset 0.jpeg" alt="">
+
+                    <img class="rounded-md h-40 w-40 " src="assets/asset 0.jpeg" alt="">
                     <img class="rounded-md h-40 w-40" src="assets/asset 1.jpeg" alt="">
                     <img class="rounded-md h-40 w-40" src="assets/asset 2.jpeg" alt="">
                     <img class="rounded-md h-40 w-40" src="assets/asset 3.jpeg" alt="">
@@ -317,29 +316,29 @@
                 </ul>
             </span>
         </div>
-
-        <div class="text-white h-fit p-8 flex flex-col gap-4 mt-6">
+        
+        <div class="text-white text-lg h-fit p-8 flex flex-col gap-6 mt-6">
             <ul class="flex flex-col gap-1">
-                <h1 class="text-lg font-bold">Company</h1>
+                <h1 class="text-xl font-bold">Company</h1>
                 <li class="font-medium opacity-80">About</li>
                 <li class="font-medium opacity-80">Jobs</li>
                 <li class="font-medium opacity-80">For the records</li>
             </ul>
             <ul class="flex flex-col gap-1">
-                <li class="text-lg font-bold">Communities</li>
+                <li class="text-xl font-bold">Communities</li>
                 <li class="font-medium opacity-80">For Artists</li>
                 <li class="font-medium opacity-80">Developers</li>
                 <li class="font-medium opacity-80">For the records</li>
             </ul>
-
+        
             <ul class="flex flex-col gap-1">
-                <li class="text-lg font-bold">Useful Links</li>
+                <li class="text-xl font-bold">Useful Links</li>
                 <li class="font-medium opacity-80">Support</li>
                 <li class="font-medium opacity-80">Free Mobile App</li>
             </ul>
-
+        
             <ul>
-                <h1 class="text-lg font-bold">Spotify Plans</h1>
+                <h1 class="text-xl font-bold">Spotify Plans</h1>
                 <li class="font-medium opacity-80">Premium Individual</li>
                 <li class="font-medium opacity-80">Premium Duo</li>
                 <li class="font-medium opacity-80">Premium Family</li>
